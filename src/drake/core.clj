@@ -678,10 +678,7 @@
 (defn -run_opts
   "Explicitly for use from Java"
   [opts]
-  (try
-    (run-opts (into {} (for [[k v] opts] [(keyword k) v])))
-    (finally
-      (shutdown-agents))))
+  (run-opts (into {} (for [[k v] opts] [(keyword k) v]))))
 
 (defn run-workflow
   ([workflow & {:as opts}]
