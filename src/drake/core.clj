@@ -20,7 +20,7 @@
         drake.utils)
   (:gen-class :methods [#^{:static true} [run_opts [java.util.Map] void]]))
 
-(def VERSION "0.1.2")
+(def VERSION "0.1.3-SNAPSHOT")
 
 (def ^:dynamic *options* {})
 (defn set-options [opts]
